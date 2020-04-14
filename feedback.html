@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Feed Back</title>
+<style type="text/css">
+    *{
+  box-sizing: border-box;
+}
+.box
+{
+    position: absolute;
+    right: 35%;
+    border: 1px solid black;
+    max-width: 500px;
+    padding: 14px;
+background-color: #ccffff;
+border-radius: 20px;
+}
+#body
+{
+    background-image: url(https://image.shutterstock.com/image-photo/gst-260nw-644861755.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+</style>
+</head>
+<body id="body">
+<a href="incometax.html" style="color: rgb(102, 0, 51);font-size: 25px;">Home</a><br><br><br>
+    <form action="/action_page.php" class="box">
+        <h1>FeedBack : </h1>
+        <label> Pan Number </label>
+        &nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="pan1" placeholder="Enter your pan number" style="background-color: #ccffff;"><br>
+        <h3>Rate our services: </h3><br><br>
+        <label > Content : </label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="radio" name="content" value="excellent"><label> Excellent</label>&nbsp;&nbsp;
+        <input type="radio" name="content" value="very"><label> Very Good</label>&nbsp;&nbsp;
+        <input type="radio" name="content" value="good"><label>Good</label>&nbsp;&nbsp;
+        <input type="radio" name="content" value="poor"><label> Poor</label><br><br>
+        <label > Ease of Navigation : </label>
+        <input type="radio" name="ease" value="excellent"><label> Excellent</label>&nbsp;&nbsp;
+        <input type="radio" name="ease" value="very"><label> Very Good</label>&nbsp;&nbsp;
+        <input type="radio" name="ease" value="good"><label>Good</label>&nbsp;&nbsp;
+        <input type="radio" name="ease" value="poor"><label> Poor</label><br><br>
+        <label > Layout : </label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="radio" name="layout" value="excellent"><label> Excellent</label>&nbsp;&nbsp;
+        <input type="radio" name="layout" value="very"><label> Very Good</label>&nbsp;&nbsp;
+        <input type="radio" name="layout" value="good"><label>Good</label>&nbsp;&nbsp;
+        <input type="radio" name="layout" value="poor"><label> Poor</label><br><br>
+
+        <label>Comments : </label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <textarea rows="5" cols="20" style="background-color: #ccffff;"></textarea><br><br><br>
+        <center><input  type="submit" name="submit" value="submit" onclick="sub()"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="reset" name="Login" value="Reset" ><br><br><br></center>
+        </form>
+<script type="text/javascript">
+    function sub() {
+        alert("Feedback is submitted successfully.");// body...
+    }
+</script>
+
+</body>
+</html>
